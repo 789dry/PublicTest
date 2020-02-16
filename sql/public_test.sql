@@ -8,44 +8,37 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema public_test
+-- Schema febs_base
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `public_test` ;
 
 -- -----------------------------------------------------
--- Schema public_test
+-- Table `febs_base`.`t_task`
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `public_test` DEFAULT CHARACTER SET utf8 ;
-USE `public_test` ;
+DROP TABLE IF EXISTS `febs_base`.`t_task` ;
 
--- -----------------------------------------------------
--- Table `public_test`.`t_task`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `public_test`.`t_task` ;
-
-CREATE TABLE IF NOT EXISTS `public_test`.`t_task` (
+CREATE TABLE IF NOT EXISTS `febs_base`.`t_task` (
   `TASK_ID` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '任务ID',
   `DEPT_ID` BIGINT(20) NULL,
   `USER_ID` BIGINT(20) NULL COMMENT '用户ID',
   `TASK_NAME` VARCHAR(200) NULL COMMENT '任务名',
   `TASK_DESC` VARCHAR(450) NULL COMMENT '任务描述',
   `TSAK_STATUS` INT NULL COMMENT '任务状态(未开始、进行中、结束、废弃、终止)	',
-  `START_TIME` DATETIME(20) NULL COMMENT '开始时间',
-  `END_TIME` DATETIME(20) NULL COMMENT '结束时间',
+  `START_TIME` DATETIME(6) NULL COMMENT '开始时间',
+  `END_TIME` DATETIME(6) NULL COMMENT '结束时间',
   `TEST_MOBILE_MODEL` MEDIUMTEXT NULL COMMENT '众测机型，该任务所需要覆盖的机型',
-  `CREATE_TIME` DATETIME(20) NULL,
-  `UPDATE_TIME` DATETIME(20) NULL,
+  `CREATE_TIME` DATETIME(6) NULL,
+  `UPDATE_TIME` DATETIME(6) NULL,
   PRIMARY KEY (`TASK_ID`),
   UNIQUE INDEX `idt_task_UNIQUE` (`TASK_ID` ASC))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `public_test`.`t_testcase`
+-- Table `febs_base`.`t_testcase`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `public_test`.`t_testcase` ;
+DROP TABLE IF EXISTS `febs_base`.`t_testcase` ;
 
-CREATE TABLE IF NOT EXISTS `public_test`.`t_testcase` (
+CREATE TABLE IF NOT EXISTS `febs_base`.`t_testcase` (
   `CASE_ID` BIGINT(20) NOT NULL COMMENT '用例ID',
   `TASK_ID` BIGINT(20) NULL COMMENT '任务ID',
   `TESTCASE_NAME` VARCHAR(100) NULL COMMENT '用例名',
@@ -53,25 +46,25 @@ CREATE TABLE IF NOT EXISTS `public_test`.`t_testcase` (
   `TEST_STEP` MEDIUMTEXT NULL COMMENT '用例执行步骤',
   `EXPECT_RESULT` VARCHAR(450) NULL COMMENT '测试用例预期执行结果--文字描述',
   `EXPECT_RESULT_PIC` VARCHAR(100) NULL COMMENT '测试用例预期执行结果--截图',
-  `CREATE_DATE` DATETIME(20) NULL COMMENT '创建日期',
-  `UPDATE_DATE` DATETIME(20) NULL COMMENT '更新日期',
+  `CREATE_DATE` DATETIME(6) NULL COMMENT '创建日期',
+  `UPDATE_DATE` DATETIME(6) NULL COMMENT '更新日期',
   `t_task_TASK_ID` BIGINT(20) NOT NULL,
   PRIMARY KEY (`CASE_ID`),
   INDEX `fk_t_testcase_t_task1_idx` (`t_task_TASK_ID` ASC),
   CONSTRAINT `fk_t_testcase_t_task1`
     FOREIGN KEY (`t_task_TASK_ID`)
-    REFERENCES `public_test`.`t_task` (`TASK_ID`)
+    REFERENCES `febs_base`.`t_task` (`TASK_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `public_test`.`t_testresult`
+-- Table `febs_base`.`t_testresult`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `public_test`.`t_testresult` ;
+DROP TABLE IF EXISTS `febs_base`.`t_testresult` ;
 
-CREATE TABLE IF NOT EXISTS `public_test`.`t_testresult` (
+CREATE TABLE IF NOT EXISTS `febs_base`.`t_testresult` (
   `RESULT_ID` BIGINT(20) NOT NULL AUTO_INCREMENT,
   `TASK_ID` BIGINT(20) NULL,
   `TESTCASE_ID` BIGINT(20) NULL COMMENT '用例ID',
@@ -79,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `public_test`.`t_testresult` (
   `EXEC_RESULT` MEDIUMTEXT NULL COMMENT '测试用例执行结果，以文字描述',
   `EXEC_RESULT_PIC` VARCHAR(100) NULL COMMENT '测试用例执行结果图',
   `TESTER` VARCHAR(45) NULL COMMENT '测试人',
-  `TEST_TIME` DATETIME(20) NULL COMMENT '测试时间',
+  `TEST_TIME` DATETIME(6) NULL COMMENT '测试时间',
   `MOBILE_MODEL` VARCHAR(45) NULL COMMENT '手机型号',
   `MOBILE_SERIAL` VARCHAR(45) NULL COMMENT '手机序列号',
   `MOBILE_SYSTEM` VARCHAR(45) NULL COMMENT '手机系统',
@@ -88,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `public_test`.`t_testresult` (
   INDEX `fk_t_testresult_t_testcase1_idx` (`t_testcase_CASE_ID` ASC),
   CONSTRAINT `fk_t_testresult_t_testcase1`
     FOREIGN KEY (`t_testcase_CASE_ID`)
-    REFERENCES `public_test`.`t_testcase` (`CASE_ID`)
+    REFERENCES `febs_base`.`t_testcase` (`CASE_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

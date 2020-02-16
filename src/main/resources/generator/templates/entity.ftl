@@ -35,6 +35,7 @@ public class ${className} {
     </#if>
     <#if (column.type = 'varchar' || column.type = 'text' || column.type = 'uniqueidentifier'
         || column.type = 'varchar2' || column.type = 'nvarchar' || column.type = 'VARCHAR2'
+        || column.type = 'tinytext' || column.type = 'mediumtext' || column.type = 'longtext'
         || column.type = 'VARCHAR'|| column.type = 'CLOB' || column.type = 'char')>
     private String ${column.field?uncap_first};
 

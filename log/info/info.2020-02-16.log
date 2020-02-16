@@ -1,0 +1,923 @@
+2020-02-16 09:44:19 INFO  main cc.mrbird.febs.FebsApplication Starting FebsApplication on MS-20170510EOYT with PID 11080 (F:\code\java\github\FEBS-Shiro\target\classes started by Administrator in F:\code\java\github\FEBS-Shiro)
+2020-02-16 09:44:19 INFO  main cc.mrbird.febs.FebsApplication The following profiles are active: dev
+2020-02-16 09:44:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-16 09:44:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-16 09:44:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 72ms. Found 0 repository interfaces.
+2020-02-16 09:44:25 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:25 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e3c02de6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:25 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:25 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:25 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'febsProperties' of type [cc.mrbird.febs.common.properties.FebsProperties$$EnhancerBySpringCGLIB$$e4f8dc91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [cc.mrbird.febs.common.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$e5b1bebe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatisPlusConfigure' of type [cc.mrbird.febs.common.configure.MybatisPlusConfigure$$EnhancerBySpringCGLIB$$e18f6342] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$b7fa29af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:26 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-02-16 09:44:26 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-02-16 09:44:27 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-02-16 09:44:27 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-02-16 09:44:27 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-02-16 09:44:27 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-02-16 09:44:27 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-02-16 09:44:27 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-02-16 09:44:27 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:27 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:27 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy116] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleServiceImpl' of type [cc.mrbird.febs.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userServiceImpl' of type [cc.mrbird.febs.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuServiceImpl' of type [cc.mrbird.febs.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleServiceImpl' of type [cc.mrbird.febs.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuServiceImpl' of type [cc.mrbird.febs.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:29 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [cc.mrbird.febs.common.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:30 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:30 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:30 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:30 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-16 09:44:32 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-02-16 09:44:32 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-02-16 09:44:32 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-02-16 09:44:32 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-02-16 09:44:32 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-02-16 09:44:32 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 13307 ms
+2020-02-16 09:44:34 INFO  main cc.mrbird.febs.common.xss.XssFilter ------------ xss filter init ------------
+2020-02-16 09:44:36 INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-02-16 09:44:36 INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-02-16 09:44:36 INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-02-16 09:44:36 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-02-16 09:44:36 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-02-16 09:44:36 INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FEBS_Scheduler' with instanceId 'MS-20170510EOYT1581817476221'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-02-16 09:44:36 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'FEBS_Scheduler' initialized from an externally provided properties instance.
+2020-02-16 09:44:36 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-02-16 09:44:36 INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@475eb4fd
+2020-02-16 09:44:36 INFO  main p6spy 2020-02-16 09:44:36 | 耗时 1 ms | SQL 语句：
+SELECT job_id jobId, bean_name beanName, method_name methodName, params, cron_expression cronExpression, status, remark, create_time createTime FROM t_job ORDER BY job_id;
+2020-02-16 09:44:39 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-02-16 09:44:39 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-02-16 09:44:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService
+2020-02-16 09:44:39 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'febsAsyncThreadPool'
+2020-02-16 09:44:40 INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-02-16 09:44:41 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2020-02-16 09:44:41 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2020-02-16 09:44:41 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2020-02-16 09:44:41 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getDeptTreeUsingGET_1
+2020-02-16 09:44:41 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_1
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_2
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_3
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_4
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteLogssUsingGET_1
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_5
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_6
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_7
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_8
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: indexUsingGET_1
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: logUsingGET_1
+2020-02-16 09:44:42 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: onlineUsingGET_1
+2020-02-16 09:44:42 INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [FEBS_Scheduler] in 1 seconds
+2020-02-16 09:44:42 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-02-16 09:44:42 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-16 09:44:42 INFO  main cc.mrbird.febs.FebsApplication Started FebsApplication in 25.757 seconds (JVM running for 27.546)
+2020-02-16 09:44:43 INFO  main io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-02-16 09:44:43 INFO  main io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-02-16 09:44:43 INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-02-16 09:44:43 INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-02-16 09:44:43 INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-02-16 09:44:43 INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner                                                       
+2020-02-16 09:44:43 INFO  main cc.mrbird.febs.common.runner.FebsStartedUpRunner FEBS 权限系统启动完毕，地址：http://192.168.3.7:8080/login
+2020-02-16 09:44:43 INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-02-16 09:44:43 INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-02-16 09:44:43 INFO  Quartz Scheduler [FEBS_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "MS-20170510EOYT1581754673937"'s failed in-progress jobs.
+2020-02-16 09:44:43 INFO  Quartz Scheduler [FEBS_Scheduler] org.quartz.core.QuartzScheduler Scheduler FEBS_Scheduler_$_MS-20170510EOYT1581817476221 started.
+2020-02-16 09:44:44 INFO  http-nio-8080-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-16 09:44:44 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-02-16 09:44:44 INFO  http-nio-8080-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 28 ms
+2020-02-16 09:44:44 INFO  http-nio-8080-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-02-16 09:44:55 INFO  http-nio-8080-exec-4 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.7 第 1 次访问key为 [limit_login192.168.3.7]，描述为 [登录接口] 的接口
+2020-02-16 09:44:55 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 09:44:55 | 耗时 10 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'mrbird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 09:44:55 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 09:44:55 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_login_log (`SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME) VALUES ('Windows ', '2020-02-16T09:44:55.518+0800', 'Chrome 79', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 'mrbird');
+2020-02-16 09:44:56 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:44:56 | 耗时 2 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 09:44:56 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:44:56 | 耗时 8 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 09:44:56 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:44:56 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 09:44:57 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 09:44:57 | 耗时 8 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 0 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T09:44:57.975+0800' WHERE (USERNAME = 'MrBird');
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 1 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 09:44:58 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:44:58 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'MrBird' GROUP BY days;
+2020-02-16 09:45:03 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:45:03 | 耗时 4 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 09:45:03 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:45:03 | 耗时 3 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 09:45:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 09:45:03 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 09:45:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 09:45:03 | 耗时 6 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 09:45:05 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 09:45:05 | 耗时 0 ms | SQL 语句：
+SELECT ID, is_trim, author, base_package, mapper_package, trim_value, service_package, service_impl_package, mapper_xml_package, entity_package, controller_package FROM t_generator_config;
+2020-02-16 09:45:25 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:45:25 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 09:45:25 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:45:25 | 耗时 1 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 10,10;
+2020-02-16 09:45:30 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 09:45:30 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 09:45:30 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 09:45:30 | 耗时 1 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 09:51:36 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 09:51:36 | 耗时 3 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 09:53:21 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:53:21 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 09:53:52 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 09:53:52 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 09:53:52 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 09:53:52 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 09:53:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 09:53:52 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 09:54:04 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:54:04 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 09:54:04 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:54:04 | 耗时 8 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 09:55:06 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 09:55:06 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 09:55:06 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 09:55:06 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 09:57:23 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 09:57:23 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('智慧医疗', '2020-02-16T09:57:23.746+0800', 9, 0);
+2020-02-16 09:57:23 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 09:57:23 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 09:57:23 INFO  Febs-Async-Thread1 p6spy 2020-02-16 09:57:23 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T09:57:23.832+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 43, ' dept: "Dept(deptId=11, parentId=0, deptName=智慧医疗, orderNum=9, createTime=Sun Feb 16 09:57:23 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 09:58:30 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 09:58:30 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, PARENT_ID) VALUES ('智慧卫健-深圳', '2020-02-16T09:58:30.664+0800', 0);
+2020-02-16 09:58:30 INFO  Febs-Async-Thread2 p6spy 2020-02-16 09:58:30 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T09:58:30.696+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 37, ' dept: "Dept(deptId=12, parentId=0, deptName=智慧卫健-深圳, orderNum=null, createTime=Sun Feb 16 09:58:30 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 09:58:30 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 09:58:30 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 09:58:56 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 09:58:56 | 耗时 2 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:01:44 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:01:44 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:01:44 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:01:44 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:01:44 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:01:44 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:01:45 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:01:45 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:01:45 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:01:45 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:02:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:02:03 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧卫健-深圳', MODIFY_TIME = '2020-02-16T10:02:03.884+0800', ORDER_NUM = 1, PARENT_ID = 9 WHERE DEPT_ID = 12;
+2020-02-16 10:02:03 INFO  Febs-Async-Thread3 p6spy 2020-02-16 10:02:03 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:02:03.943+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 59, ' dept: "Dept(deptId=12, parentId=9, deptName=智慧卫健-深圳, orderNum=1, createTime=null, modifyTime=Sun Feb 16 10:02:03 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:02:03 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:02:03 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:02:08 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:02:08 | 耗时 2 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:02:08 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:02:08 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:02:08 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:02:08 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:02:08 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:02:08 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:02:09 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:02:09 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:02:41 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:02:41 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧卫健-深圳', MODIFY_TIME = '2020-02-16T10:02:41.239+0800', ORDER_NUM = 1, PARENT_ID = 10 WHERE DEPT_ID = 12;
+2020-02-16 10:02:41 INFO  Febs-Async-Thread4 p6spy 2020-02-16 10:02:41 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:02:41.265+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 26, ' dept: "Dept(deptId=12, parentId=10, deptName=智慧卫健-深圳, orderNum=1, createTime=null, modifyTime=Sun Feb 16 10:02:41 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:02:41 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:02:41 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:03:34 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:03:34 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '系统部', MODIFY_TIME = '2020-02-16T10:03:34.321+0800', ORDER_NUM = 7, PARENT_ID = 11 WHERE DEPT_ID = 10;
+2020-02-16 10:03:34 INFO  Febs-Async-Thread5 p6spy 2020-02-16 10:03:34 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:03:34.330+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 9, ' dept: "Dept(deptId=10, parentId=11, deptName=系统部, orderNum=7, createTime=null, modifyTime=Sun Feb 16 10:03:34 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:03:34 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:03:34 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:05:13 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:05:13 | 耗时 6 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '系统部', MODIFY_TIME = '2020-02-16T10:05:13.620+0800', ORDER_NUM = 7, PARENT_ID = 0 WHERE DEPT_ID = 10;
+2020-02-16 10:05:13 INFO  Febs-Async-Thread1 p6spy 2020-02-16 10:05:13 | 耗时 10 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:05:13.654+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 33, ' dept: "Dept(deptId=10, parentId=0, deptName=系统部, orderNum=7, createTime=null, modifyTime=Sun Feb 16 10:05:13 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:05:13 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:05:13 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:05:19 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:05:19 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧卫健-深圳', MODIFY_TIME = '2020-02-16T10:05:19.633+0800', ORDER_NUM = 1, PARENT_ID = 11 WHERE DEPT_ID = 12;
+2020-02-16 10:05:19 INFO  Febs-Async-Thread2 p6spy 2020-02-16 10:05:19 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:05:19.653+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 20, ' dept: "Dept(deptId=12, parentId=11, deptName=智慧卫健-深圳, orderNum=1, createTime=null, modifyTime=Sun Feb 16 10:05:19 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:05:19 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:05:19 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:06:08 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:06:08 | 耗时 4 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('智慧卫健-上海', '2020-02-16T10:06:08.790+0800', 2, 11);
+2020-02-16 10:06:08 INFO  Febs-Async-Thread3 p6spy 2020-02-16 10:06:08 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T10:06:08.809+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 20, ' dept: "Dept(deptId=13, parentId=11, deptName=智慧卫健-上海, orderNum=2, createTime=Sun Feb 16 10:06:08 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 10:06:08 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:06:08 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:06:23 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:06:23 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('智慧医院', '2020-02-16T10:06:23.376+0800', 3, 11);
+2020-02-16 10:06:23 INFO  Febs-Async-Thread4 p6spy 2020-02-16 10:06:23 | 耗时 5 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T10:06:23.407+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 29, ' dept: "Dept(deptId=14, parentId=11, deptName=智慧医院, orderNum=3, createTime=Sun Feb 16 10:06:23 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 10:06:23 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:06:23 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:07:34 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:07:34 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:07:34 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:07:34 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:07:34 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:07:34 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:09:08 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:09:08 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('管理部门', '2020-02-16T10:09:08.960+0800', 12, 0);
+2020-02-16 10:09:08 INFO  Febs-Async-Thread5 p6spy 2020-02-16 10:09:08 | 耗时 4 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T10:09:08.969+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 11, ' dept: "Dept(deptId=15, parentId=0, deptName=管理部门, orderNum=12, createTime=Sun Feb 16 10:09:08 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 10:09:08 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:09:08 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:09:21 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:09:21 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧医疗', MODIFY_TIME = '2020-02-16T10:09:21.552+0800', ORDER_NUM = 10, PARENT_ID = 0 WHERE DEPT_ID = 11;
+2020-02-16 10:09:21 INFO  Febs-Async-Thread1 p6spy 2020-02-16 10:09:21 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:09:21.562+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 10, ' dept: "Dept(deptId=11, parentId=0, deptName=智慧医疗, orderNum=10, createTime=null, modifyTime=Sun Feb 16 10:09:21 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:09:21 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:09:21 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:09:25 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:09:25 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '管理部门', MODIFY_TIME = '2020-02-16T10:09:25.062+0800', ORDER_NUM = 9, PARENT_ID = 0 WHERE DEPT_ID = 15;
+2020-02-16 10:09:25 INFO  Febs-Async-Thread2 p6spy 2020-02-16 10:09:25 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.updateDept()', '2020-02-16T10:09:25.072+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 10, ' dept: "Dept(deptId=15, parentId=0, deptName=管理部门, orderNum=9, createTime=null, modifyTime=Sun Feb 16 10:09:25 GMT+08:00 2020)"', '修改部门', 'MrBird');
+2020-02-16 10:09:25 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:09:25 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:20:19 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:20:19 | 耗时 4 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:20:19 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:20:19 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:20:19 | 耗时 5 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:20:19 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:20:19 | 耗时 68 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:20:20 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:20:20 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:23:14 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:23:14 | 耗时 2 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:23:14 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:23:14 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:23:14 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:23:14 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:23:14 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:23:14 | 耗时 9 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:23:15 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:23:15 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:25:24 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:25:24 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:25:24 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:25:24 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:25:24 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:25:24 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:25:25 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:25:25 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:25:25 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:25:25 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:26:48 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:26:48 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:26:48 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:26:48 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:26:48 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:26:48 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:26:48 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:26:48 | 耗时 5 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:26:48 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:26:48 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:28:06 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:28:06 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird';
+2020-02-16 10:28:06 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:28:06 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'MrBird' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:28:06 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:28:06 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'MrBird' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:28:07 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:28:07 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'MrBird') ORDER BY m.order_num;
+2020-02-16 10:28:07 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:28:07 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:28:47 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:28:47 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('超级管理员', '2020-02-16T10:28:47.508+0800', 1, 15);
+2020-02-16 10:28:47 INFO  Febs-Async-Thread3 p6spy 2020-02-16 10:28:47 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T10:28:47.516+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 9, ' dept: "Dept(deptId=16, parentId=15, deptName=超级管理员, orderNum=1, createTime=Sun Feb 16 10:28:47 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 10:28:47 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:28:47 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:29:33 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:29:33 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_dept (DEPT_NAME, CREATE_TIME, ORDER_NUM, PARENT_ID) VALUES ('部门管理', '2020-02-16T10:29:33.992+0800', 2, 15);
+2020-02-16 10:29:34 INFO  Febs-Async-Thread4 p6spy 2020-02-16 10:29:34 | 耗时 14 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.addDept()', '2020-02-16T10:29:33.999+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 10, ' dept: "Dept(deptId=17, parentId=15, deptName=部门管理, orderNum=2, createTime=Sun Feb 16 10:29:33 GMT+08:00 2020, modifyTime=null)"', '新增部门', 'MrBird');
+2020-02-16 10:29:34 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:29:34 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:29:48 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:29:48 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:29:48 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:29:48 | 耗时 2 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:29:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:29:48 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:29:59 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:29:59 | 耗时 4 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:30:08 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:30:08 | 耗时 31 ms | SQL 语句：
+DELETE FROM t_dept WHERE DEPT_ID IN ('16', '17');
+2020-02-16 10:30:08 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:30:08 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept WHERE (PARENT_ID IN ('16', '17'));
+2020-02-16 10:30:08 INFO  Febs-Async-Thread5 p6spy 2020-02-16 10:30:08 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.DeptController.deleteDepts()', '2020-02-16T10:30:08.679+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 52, ' deptIds: "16,17"', '删除部门', 'MrBird');
+2020-02-16 10:30:08 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:30:08 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:30:22 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:30:22 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:30:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:30:22 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:30:22 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:30:22 | 耗时 41 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:30:26 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:30:26 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:30:26 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:30:26 | 耗时 1 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 10:31:18 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:31:18 | 耗时 4 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:31:18 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:31:18 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_user (DESCRIPTION, PASSWORD, THEME, EMAIL, SSEX, MOBILE, DEPT_ID, AVATAR, CREATE_TIME, IS_TAB, STATUS, USERNAME) VALUES ('', '470263a5622b6153be9e681545233f55', 'black', '', '2', '', 15, 'default.jpg', '2020-02-16T10:31:18.280+0800', '1', '1', 'admin');
+2020-02-16 10:31:18 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:31:18 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:31:18 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:31:18 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:31:18 INFO  Febs-Async-Thread1 p6spy 2020-02-16 10:31:18 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_log (METHOD, CREATE_TIME, IP, LOCATION, TIME, PARAMS, OPERATION, USERNAME) VALUES ('cc.mrbird.febs.system.controller.UserController.addUser()', '2020-02-16T10:31:18.414+0800', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 50, ' user: "User(userId=8, username=admin, password=470263a5622b6153be9e681545233f55, deptId=15, email=, mobile=, status=1, createTime=Sun Feb 16 10:31:18 GMT+08:00 2020, modifyTime=null, lastLoginTime=null, sex=2, avatar=default.jpg, theme=black, isTab=1, description=, deptName=null, createTimeFrom=null, createTimeTo=null, roleId=1, roleName=null)"', '新增用户', 'MrBird');
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-8 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.7 第 1 次访问key为 [limit_login192.168.3.7]，描述为 [登录接口] 的接口
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:31:51 | 耗时 5 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:31:51 | 耗时 1 ms | SQL 语句：
+INSERT INTO t_login_log (`SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME) VALUES ('Windows ', '2020-02-16T10:31:51.445+0800', 'Chrome 79', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 'admin');
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:31:51 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:31:51 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:31:51 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:31:51 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:31:52 | 耗时 33 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T10:31:52.500+0800' WHERE (USERNAME = 'admin');
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 10:31:52 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:31:52 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 10:31:56 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:31:56 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:31:56 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:31:56 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:31:56 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:31:56 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:31:56 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:31:56 | 耗时 3 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:31:56 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:31:56 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:32:08 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:32:08 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:32:34 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:32:34 | 耗时 34 ms | SQL 语句：
+DELETE FROM t_user WHERE USER_ID IN ('1');
+2020-02-16 10:32:34 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:32:34 | 耗时 1 ms | SQL 语句：
+DELETE FROM t_user_role WHERE (USER_ID IN ('1'));
+2020-02-16 10:32:34 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:32:34 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:32:34 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:32:34 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:32:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:32:48 | 耗时 0 ms | SQL 语句：
+DELETE FROM t_user WHERE USER_ID IN ('2', '3', '4', '5', '6', '7');
+2020-02-16 10:32:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:32:48 | 耗时 0 ms | SQL 语句：
+DELETE FROM t_user_role WHERE (USER_ID IN ('2', '3', '4', '5', '6', '7'));
+2020-02-16 10:32:48 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:32:48 | 耗时 5 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:32:48 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:32:48 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:33:06 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:33:06 | 耗时 0 ms | SQL 语句：
+DELETE FROM t_dept WHERE DEPT_ID IN ('1', '4', '5', '6', '7', '8', '10', '9');
+2020-02-16 10:33:06 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:33:06 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept WHERE (PARENT_ID IN ('1', '4', '5', '6', '7', '8', '10', '9'));
+2020-02-16 10:33:06 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:33:06 | 耗时 1 ms | SQL 语句：
+DELETE FROM t_dept WHERE DEPT_ID IN ('2', '3');
+2020-02-16 10:33:06 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:33:06 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept WHERE (PARENT_ID IN ('2', '3'));
+2020-02-16 10:33:06 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:33:06 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:33:13 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:33:13 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:33:13 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:33:13 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:33:13 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:33:13 | 耗时 7 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:33:21 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:33:21 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:35:28 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:35:28 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:35:28 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:35:28 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:35:28 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:35:28 | 耗时 5 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:35:29 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:35:29 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:35:29 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:35:29 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:35:57 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:35:57 | 耗时 0 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧卫健-深圳', MODIFY_TIME = '2020-02-16T10:35:57.753+0800', ORDER_NUM = 4, PARENT_ID = 11 WHERE DEPT_ID = 12;
+2020-02-16 10:35:57 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:35:57 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:36:01 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:36:01 | 耗时 1 ms | SQL 语句：
+UPDATE t_dept SET DEPT_NAME = '智慧卫健-深圳', MODIFY_TIME = '2020-02-16T10:36:01.954+0800', ORDER_NUM = 1, PARENT_ID = 11 WHERE DEPT_ID = 12;
+2020-02-16 10:36:01 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:36:01 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:36:18 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:36:18 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:36:18 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:36:18 | 耗时 2 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:36:18 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:36:18 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:36:40 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:36:40 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:36:40 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:36:40 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:36:40 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:36:40 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:37:19 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:37:19 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:39:19 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:39:19 | 耗时 2 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:39:43 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:39:43 | 耗时 0 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:39:53 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:39:53 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:39:53 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:39:53 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:39:53 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:39:53 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:40:05 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:40:05 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:40:05 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:40:05 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 10:40:08 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:40:08 | 耗时 3 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:40:18 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:40:18 | 耗时 3 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:40:18 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:40:18 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:40:18 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:40:18 | 耗时 2 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 10:40:32 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:40:32 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:40:32 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:40:32 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:40:33 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:40:33 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 10:40:42 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:40:42 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:40:42 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:40:42 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:40:42 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:40:42 | 耗时 0 ms | SQL 语句：
+SELECT ROLE_ID, MODIFY_TIME, CREATE_TIME, ROLE_NAME, REMARK FROM t_role;
+2020-02-16 10:42:27 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:42:27 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:42:27 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:42:27 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:42:27 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:42:27 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:42:28 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:42:28 | 耗时 5 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:42:28 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:42:28 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:43:12 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:12 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:43:12 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:12 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:43:12 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:12 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:43:13 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:43:13 | 耗时 5 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:43:13 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:43:13 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:43:53 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:53 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:43:53 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:53 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:43:53 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:43:53 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:43:53 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:43:53 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:43:53 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:43:53 | 耗时 17 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-02-16 10:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-02-16 10:47:03 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:47:03 | 耗时 18 ms | SQL 语句：
+INSERT INTO t_menu (ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, CREATE_TIME, PERMS) VALUES ('layui-icon-reddit', 1, '众测管理', '0', '/public/test', 0, '2020-02-16T10:47:03.737+0800', 'test:view');
+2020-02-16 10:47:03 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:47:03 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:47:23 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:47:23 | 耗时 0 ms | SQL 语句：
+UPDATE t_menu SET ICON = 'layui-icon-reddit', ORDER_NUM = 10, MENU_NAME = '众测管理', TYPE = '0', URL = '/public/test', PARENT_ID = 0, MODIFY_TIME = '2020-02-16T10:47:23.252+0800', PERMS = 'test:view' WHERE MENU_ID = 178;
+2020-02-16 10:47:23 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:47:23 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:47:27 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:47:27 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:47:27 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:47:27 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:47:27 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:47:27 | 耗时 0 ms | SQL 语句：
+UPDATE t_menu SET ICON = 'layui-icon-reddit', ORDER_NUM = 1, MENU_NAME = '众测管理', TYPE = '0', URL = '/public/test', PARENT_ID = 0, MODIFY_TIME = '2020-02-16T10:47:27.474+0800', PERMS = 'test:view' WHERE MENU_ID = 178;
+2020-02-16 10:47:27 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:47:27 | 耗时 2 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:48:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:48:03 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:48:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:48:03 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:48:09 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:48:09 | 耗时 1 ms | SQL 语句：
+UPDATE t_menu SET ICON = 'layui-icon-reddit', ORDER_NUM = 1, MENU_NAME = '众测管理', TYPE = '0', URL = '', PARENT_ID = 0, MODIFY_TIME = '2020-02-16T10:48:09.902+0800', PERMS = '' WHERE MENU_ID = 178;
+2020-02-16 10:48:09 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:48:09 | 耗时 2 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:48:12 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:48:12 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:48:12 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:48:12 | 耗时 4 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:48:12 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:48:12 | 耗时 9 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:48:13 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:48:13 | 耗时 4 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:48:13 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:48:13 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:48:13 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:48:13 | 耗时 3 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:48:14 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:48:14 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:51:51 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:51:51 | 耗时 5 ms | SQL 语句：
+INSERT INTO t_menu (ICON, MENU_NAME, TYPE, URL, PARENT_ID, CREATE_TIME, PERMS) VALUES ('', '众测任务', '0', '/test/task', 178, '2020-02-16T10:51:51.000+0800', '');
+2020-02-16 10:51:51 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:51:51 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:52:13 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:52:13 | 耗时 1 ms | SQL 语句：
+UPDATE t_menu SET ICON = '', MENU_NAME = '众测任务', TYPE = '0', URL = '/test/task', PARENT_ID = 178, MODIFY_TIME = '2020-02-16T10:52:13.354+0800', PERMS = 'task:view' WHERE MENU_ID = 179;
+2020-02-16 10:52:13 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:52:13 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:52:29 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:52:29 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:52:29 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:52:29 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:52:43 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 10:52:43 | 耗时 10 ms | SQL 语句：
+INSERT INTO t_menu (ICON, MENU_NAME, TYPE, URL, PARENT_ID, CREATE_TIME, PERMS) VALUES ('', '众测报告', '0', '/test/report', 178, '2020-02-16T10:52:42.997+0800', 'report:view');
+2020-02-16 10:52:43 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:52:43 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:52:59 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:52:59 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 10:52:59 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:52:59 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 10:52:59 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:52:59 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 10:53:00 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:53:00 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 10:53:06 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:53:06 | 耗时 4 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:53:06 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:53:06 | 耗时 2 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:53:06 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:53:06 | 耗时 3 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:53:11 | 耗时 0 ms | SQL 语句：
+UPDATE t_role SET MODIFY_TIME = '2020-02-16T10:53:11.282+0800', ROLE_NAME = '系统管理员', REMARK = '系统管理员，拥有所有操作权限 ^_^' WHERE ROLE_ID = 1;
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:53:11 | 耗时 25 ms | SQL 语句：
+DELETE FROM t_role_menu WHERE (ROLE_ID IN ('1'));
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:11 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:11 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:11 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:53:11 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:11 | 耗时 3 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:53:16 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:53:16 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 10:53:16 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:53:16 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:16 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:53:16 | 耗时 2 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 10:53:16 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:53:16 | 耗时 2 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:53:32 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:53:32 | 耗时 7 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 10:55:33 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 10:55:33 | 耗时 1 ms | SQL 语句：
+SELECT ID, is_trim, author, base_package, mapper_package, trim_value, service_package, service_impl_package, mapper_xml_package, entity_package, controller_package FROM t_generator_config;
+2020-02-16 10:55:48 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:55:48 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 10:55:48 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 10:55:48 | 耗时 29 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 10:56:02 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:56:02 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:56:02 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:56:02 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:56:02 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:56:02 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:56:03 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 10:56:03 | 耗时 9 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:56:03 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:56:03 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 10:56:03 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:56:03 | 耗时 1 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 10:56:06 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:56:06 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 10:56:06 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 10:56:06 | 耗时 1 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 10:56:13 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 10:56:13 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' AND TABLE_NAME = 't_task';
+2020-02-16 10:59:24 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:59:24 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 10:59:24 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:59:24 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 10:59:24 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 10:59:24 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 10:59:25 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 10:59:25 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 10:59:25 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:59:25 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base';
+2020-02-16 10:59:25 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 10:59:25 | 耗时 6 ms | SQL 语句：
+SELECT CREATE_TIME createTime, UPDATE_TIME updateTime, TABLE_ROWS dataRows, TABLE_NAME name, TABLE_COMMENT remark FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'febs_base' ORDER BY createTime LIMIT 0,10;
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-9 cc.mrbird.febs.common.aspect.LimitAspect IP:192.168.3.7 第 1 次访问key为 [limit_login192.168.3.7]，描述为 [登录接口] 的接口
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:01:10 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:01:10 | 耗时 0 ms | SQL 语句：
+INSERT INTO t_login_log (`SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME) VALUES ('Windows ', '2020-02-16T11:01:10.459+0800', 'Chrome 79', '192.168.3.7', '内网IP|0|0|内网IP|内网IP', 'admin');
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:01:10 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:01:10 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:01:10 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:01:10 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:01:11 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 0 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:01:11.446+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 3 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:01:11 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:01:11 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:05:22 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:05:22 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:05:22 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 11:05:22 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 0 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:05:22.854+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 3 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:05:22 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:05:22 | 耗时 2 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:11:46 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:11:46 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:11:46 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:11:46 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:11:46 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:11:46 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:11:49 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:11:49 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 0 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:11:50.166+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 8 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 1 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:11:50 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:11:50 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:12:36 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:12:36 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:12:36 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:12:36 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:12:36 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:12:36 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:12:36 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:12:36 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:12:37.039+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:12:37 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:12:37 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:13:00 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:13:00 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:13:01 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:13:01 | 耗时 5 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:13:01 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:13:01 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:13:03 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:13:03 | 耗时 2 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:13:03 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:03 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:13:03.978+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:13:03 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:03 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:13:03 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:03 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:13:04 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:03 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:13:04 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:04 | 耗时 2 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:13:04 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:13:04 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:16:20 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:16:20 | 耗时 14 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:16:20 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:16:20 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:16:20 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 11:16:20 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 11:16:20 INFO  http-nio-8080-exec-5 p6spy 2020-02-16 11:16:20 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 11:16:20 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:16:20 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 11:16:21 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:16:21 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ) TOTAL;
+2020-02-16 11:16:21 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:16:21 | 耗时 4 ms | SQL 语句：
+SELECT r.role_id roleId, r.role_name roleName, r.remark, r.create_time createTime, r.modify_time modifyTime, GROUP_CONCAT(rm.menu_id) menuIds FROM t_role r LEFT JOIN t_role_menu rm ON (r.role_id = rm.role_id) WHERE 1 = 1 GROUP BY r.role_id ORDER BY createTime DESC LIMIT 0,10;
+2020-02-16 11:16:21 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:16:21 | 耗时 1 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 11:16:22 INFO  http-nio-8080-exec-3 p6spy 2020-02-16 11:16:22 | 耗时 0 ms | SQL 语句：
+SELECT MENU_ID, ICON, ORDER_NUM, MENU_NAME, TYPE, URL, PARENT_ID, MODIFY_TIME, CREATE_TIME, PERMS FROM t_menu ORDER BY ORDER_NUM ASC;
+2020-02-16 11:16:23 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:16:23 | 耗时 1 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept ORDER BY ORDER_NUM ASC;
+2020-02-16 11:31:14 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:31:14 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:31:14 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:31:14 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:31:14 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:31:14 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:31:14 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:31:14 | 耗时 18 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:31:15.183+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 2 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 36 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 1 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 2 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:31:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:31:15 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:31:23 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:31:23 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:31:23 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:31:23 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:31:23 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 11:31:23 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:31:23 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 11:31:23 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:31:24.043+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 1 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 2 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:31:24 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 11:31:24 | 耗时 3 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:43:15 | 耗时 24 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:43:15 | 耗时 14 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 11:43:15 | 耗时 5 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:43:15 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:15 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:43:15.981+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:43:15 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:15 | 耗时 2 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:43:16 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:16 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:43:16 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:16 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:43:16 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:16 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:43:16 INFO  http-nio-8080-exec-7 p6spy 2020-02-16 11:43:16 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 11:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-02-16 11:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-02-16 11:44:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:44:48 | 耗时 20 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 11:44:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:44:48 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 11:44:48 INFO  http-nio-8080-exec-9 p6spy 2020-02-16 11:44:48 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-2 p6spy 2020-02-16 11:44:49 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 4 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T11:44:49.207+0800' WHERE (USERNAME = 'admin');
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 1 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 1 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 11:44:49 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 11:44:49 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
+2020-02-16 12:01:05 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 12:01:05 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 12:01:05 INFO  http-nio-8080-exec-8 p6spy 2020-02-16 12:01:05 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 12:01:05 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 12:01:05 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM ( SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ) TOTAL;
+2020-02-16 12:01:05 INFO  http-nio-8080-exec-6 p6spy 2020-02-16 12:01:05 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE 1 = 1 GROUP BY u.username, u.user_id, u.email, u.mobile, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar ORDER BY userId LIMIT 0,10;
+2020-02-16 12:01:05 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 12:01:05 | 耗时 0 ms | SQL 语句：
+SELECT DEPT_ID, DEPT_NAME, MODIFY_TIME, CREATE_TIME, ORDER_NUM, PARENT_ID FROM t_dept;
+2020-02-16 12:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-02-16 12:44:44 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-02-16 15:25:09 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-02-16 15:25:13 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-02-16 15:25:13 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Validating all active sessions...
+2020-02-16 15:25:13 INFO  SessionValidationThread-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Finished session validation.  No sessions were stopped.
+2020-02-16 15:28:25 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 15:28:25 | 耗时 0 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin';
+2020-02-16 15:28:25 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 15:28:25 | 耗时 25 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'admin' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-02-16 15:28:25 INFO  http-nio-8080-exec-4 p6spy 2020-02-16 15:28:25 | 耗时 0 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.description, u.avatar, u.theme, u.is_tab isTab, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'admin' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-1 p6spy 2020-02-16 15:28:26 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'admin') ORDER BY m.order_num;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-02-16T15:28:26.775+0800' WHERE (USERNAME = 'admin');
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 0 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 0 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 0 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-02-16 15:28:26 INFO  http-nio-8080-exec-10 p6spy 2020-02-16 15:28:26 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'admin' GROUP BY days;
